@@ -1,0 +1,19 @@
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.design01 {
+ width: 80%;
+ text-align: center;
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+.design01 th {
+ padding: 2px;
+ border: solid 1px #778ca3;
+}
+.design01 td {
+ padding: 2px;
+ border: solid 1px #778ca3;
+}

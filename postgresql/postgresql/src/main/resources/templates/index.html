@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>データベース表示</title>
+    <link rel="stylesheet" th:href="@{/css/test.css}"/>
+</head>
+<body>
+<h1>
+    データベースを表示しよう
+</h1>
+<div class="parent">
+    <div id="view_clock"></div>
+</div>
+<div class="parent">
+    <table class="design01">
+        <tr>
+            <th>ID</th>
+            <th>BEGIN_TIME</th>
+            <th>END_TIME</th>
+        </tr>
+        <tr th:each="attend : ${attend}">
+            <td th:text="${attend.get('id')}"></td>
+            <td th:text="${attend.get('begin_time')}"></td>
+            <td th:text="${attend.get('end_time')}"></td>
+        </tr>
+    </table>
+</div>
+<script th:src="@{/css/test.js}"></script>
+</body>
+</html>
